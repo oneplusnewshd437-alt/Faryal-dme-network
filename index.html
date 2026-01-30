@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faryal DME Network | Digital Marketing Express</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0b1d3a;color:#fff}
+
+/* ===== HEADER ===== */
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px 8%;
+background:linear-gradient(135deg,#081a33,#0e3c7a);
+}
+
+.hero-text{max-width:55%}
+.hero-text h1{font-size:52px}
+.hero-text span{color:#ffcc00}
+.hero-text p{margin:20px 0 30px;font-size:18px}
+
+.btn{
+padding:14px 35px;
+background:#ffcc00;
+color:#000;
+border-radius:40px;
+font-weight:600;
+text-decoration:none;
+}
+
+/* ===== 3D LOGO ===== */
+.logo-3d{
+width:320px;height:320px;
+background:#fff;
+border-radius:30px;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 30px 60px rgba(0,0,0,.6);
+transform:perspective(900px) rotateY(-15deg);
+animation:float 4s ease-in-out infinite;
+}
+.logo-3d img{width:80%}
+
+@keyframes float{
+50%{transform:perspective(900px) rotateY(-15deg) translateY(-15px)}
+}
+
+/* ===== SECTIONS ===== */
+section{padding:80px 8%}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h2{font-size:40px}
+.section-title span{color:#ffcc00}
+
+/* ===== SERVICES ===== */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.service-box{
+background:#102a52;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,.5);
+transition:.3s;
+}
+.service-box:hover{transform:translateY(-10px)}
+
+.service-img{
+position:relative;
+}
+.service-img img{width:100%;display:block}
+
+.strip{
+position:absolute;
+top:0;left:0;
+width:100%;
+background:rgba(0,0,0,.7);
+padding:10px;
+text-align:center;
+font-weight:600;
+}
+
+.service-content{padding:25px}
+.service-content h3{color:#ffcc00;margin-bottom:10px}
+
+/* ===== BOOST DETAILS ===== */
+.details{
+display:none;
+margin-top:15px;
+font-size:14px;
+line-height:1.7;
+opacity:.9;
+}
+
+/* ===== FOOTER ===== */
+footer{
+background:#06142b;
+text-align:center;
+padding:25px;
+margin-top:60px;
+font-size:15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+header{flex-direction:column;text-align:center}
+.hero-text{max-width:100%}
+.logo-3d{margin-top:40px}
+.hero-text h1{font-size:38px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+<div class="hero-text">
+<h1>Professional <span>Digital Marketing</span> Express</h1>
+<p>2D & 3D Branding | Posters | Social Media Growth  
+by <b>Faryal DME Network</b></p>
+<a href="#services" class="btn">Our Services</a>
+</div>
+
+<div class="logo-3d">
+<img src="IMG-20260130-WA0051~2.jpg" alt="Logo">
+</div>
+</header>
+
+<!-- SERVICES -->
+<section id="services">
+<div class="section-title">
+<h2>Our <span>Services</span></h2>
+</div>
+
+<div class="services">
+
+<!-- Service 1 -->
+<div class="service-box">
+<div class="service-img">
+<div class="strip">Canadian Client Poster Project</div>
+<img src="IMG-20260130-WA0046.jpg">
+</div>
+</div>
+
+<!-- Service 2 -->
+<div class="service-box">
+<div class="service-img">
+<div class="strip">Canadian Client Poster Project</div>
+<img src="IMG-20260130-WA0043.jpg">
+</div>
+</div>
+
+<!-- Service 3 -->
+<div class="service-box">
+<div class="service-img">
+<div class="strip">Canadian Client Poster Project</div>
+<img src="IMG-20260130-WA0055.jpg">
+</div>
+</div>
+
+<!-- Medical -->
+<div class="service-box">
+<div class="service-img">
+<img src="IMG-20260130-WA0053.jpg">
+</div>
+<div class="service-content">
+<h3>Medical Posters Sample</h3>
+</div>
+</div>
+
+<!-- BOOST SERVICE -->
+<div class="service-box" onclick="this.querySelector('.details').style.display='block'">
+<div class="service-content">
+<h3>🚀 Boost Social Media Followers</h3>
+<p>Click to view details</p>
+
+<div class="details">
+✅ Genuine followers & likes<br>
+✅ Targeted audience<br>
+✅ Fast & safe delivery<br>
+📩 DM us now<br><br>
+<b>Boost your brand with Faryal DME</b>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 | Faryal DME Network | 📞 0322-7190681
+</footer>
+
+</body>
+  </html>
